@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurPro - Acentenizin Hem Vitrini Hem Beyni | Tur Yönetim Yazılımı</title>
+    <meta name="description"
+        content="Sadece yönetim paneli değil; müşterilerinizin online rezervasyon yapabileceği modern web siteniz ve tüm operasyonu yönettiğiniz admin paneli tek pakette.">
+    <meta name="keywords"
+        content="tur yönetim sistemi, turizm yazılımı, acente yazılımı, online rezervasyon, tur acentesi sitesi">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <i data-lucide="plane" class="logo-plane"></i>
+                </span>
+                <span class="logo-text">TurPro</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#dual-power">Ne Sunuyoruz?</a></li>
+                <li><a href="#features">Özellikler</a></li>
+                <li><a href="#benefits">Faydalar</a></li>
+                <li><a href="#contact" class="nav-cta">Sunum Talep Et</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-up">
+                    <i data-lucide="sparkles"></i>
+                    <span>Turizm Acenteleri İçin Komple Çözüm</span>
+                </div>
+
+                <h1 class="hero-title animate-fade-up delay-1">
+                    Acentenizin Hem Vitrini
+                    <span class="gradient-text">Hem Beyni:</span>
+                    İkisi Bir Arada.
+                </h1>
+
+                <p class="hero-description animate-fade-up delay-2">
+                    Sadece bir yönetim paneli değil; müşterilerinizin online rezervasyon yapabileceği <strong>modern web
+                        siteniz</strong> ve tüm operasyonu yönettiğiniz <strong>admin paneli</strong> tek pakette. Excel
+                    tablolarından kurtulun, satışlarınızı artırın.
+                </p>
+
+                <div class="hero-buttons animate-fade-up delay-3">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i data-lucide="lock"></i>
+                        Özel Sunum Talep Et
+                    </a>
+                    <a href="#dual-power" class="btn btn-secondary btn-lg">
+                        <i data-lucide="arrow-down"></i>
+                        Sistemi Keşfet
+                    </a>
+                </div>
+
+                <div class="hero-trust animate-fade-up delay-4">
+                    <div class="trust-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>Kurulum Desteği</span>
+                    </div>
+                    <div class="trust-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>7/24 Erişim</span>
+                    </div>
+                    <div class="trust-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>Güvenli Altyapı</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual animate-fade-left delay-2">
+                <div class="screenshot-frame">
+                    <div class="frame-header">
+                        <div class="frame-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="frame-title">turpro-acenteniz.com</div>
+                    </div>
+                    <div class="frame-content">
+                        <img src="ss4.png" alt="TurPro Public Site - Acente Web Sitesi" class="screenshot-img">
+                    </div>
+                </div>
+                <div class="hero-caption">
+                    <i data-lucide="arrow-up"></i>
+                    <span>Müşterilerinizin göreceği modern web siteniz</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <a href="#dual-power">
+                <i data-lucide="chevrons-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Dual Power Section -->
+    <section class="dual-power" id="dual-power">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">İki Sistem, Tek Paket</span>
+                <h2 class="section-title">Sadece Panel Değil, <span class="gradient-text">Komple Çözüm</span></h2>
+                <p class="section-description">Rakiplerimiz size sadece bir yönetim paneli satar. Biz ise
+                    müşterilerinizin göreceği profesyonel web sitesi + sizin yöneteceğiniz güçlü admin panelini birlikte
+                    sunuyoruz.</p>
+            </div>
+
+            <div class="dual-tabs">
+                <div class="dual-tabs-nav">
+                    <button class="dual-tab-btn active" data-tab="public-tab">
+                        <i data-lucide="globe"></i>
+                        <span>Müşteriniz Ne Görür?</span>
+                    </button>
+                    <button class="dual-tab-btn" data-tab="admin-tab">
+                        <i data-lucide="settings"></i>
+                        <span>Siz Ne Görürsünüz?</span>
+                    </button>
+                </div>
+
+                <div class="dual-tabs-content">
+                    <!-- Public Site Tab -->
+                    <div class="dual-tab-panel active" id="public-tab">
+                        <div class="dual-grid">
+                            <div class="dual-info reveal-left">
+                                <div class="dual-label public">
+                                    <i data-lucide="users"></i>
+                                    Public Site (Müşteri Vitrini)
+                                </div>
+                                <h3>Müşterileriniz İçin Modern E-Ticaret Sitesi</h3>
+                                <p>Müşterileriniz turlarınızı inceler, beğendiğini sepete atar ve online rezervasyon
+                                    yapar. Siz uğraşmadan, 7/24 satış yaparsınız.</p>
+
+                                <ul class="dual-features">
+                                    <li>
+                                        <i data-lucide="clock"></i>
+                                        <div>
+                                            <strong>7/24 Online Rezervasyon</strong>
+                                            <span>Gece 3'te bile müşteriniz tur satın alabilir</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="smartphone"></i>
+                                        <div>
+                                            <strong>Mobil Uyumlu, SEO Dostu</strong>
+                                            <span>Google'da üst sıralarda çıkın, telefondan kolay kullanım</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="refresh-cw"></i>
+                                        <div>
+                                            <strong>Otomatik Tur Listeleme</strong>
+                                            <span>Admin'den ekleyin, siteye anında düşsün</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="user"></i>
+                                        <div>
+                                            <strong>Kullanıcı Paneli</strong>
+                                            <span>Müşterileriniz biletlerini ve geçmiş turlarını görsün</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dual-visual reveal-right">
+                                <div class="screenshot-frame large">
+                                    <div class="frame-header">
+                                        <div class="frame-dots">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="frame-title">turpro-acenteniz.com/turlar</div>
+                                    </div>
+                                    <div class="frame-content">
+                                        <img src="ss1.png" alt="TurPro Turlar Sayfası" class="screenshot-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Admin Panel Tab -->
+                    <div class="dual-tab-panel" id="admin-tab">
+                        <div class="dual-grid">
+                            <div class="dual-info reveal-left">
+                                <div class="dual-label admin">
+                                    <i data-lucide="shield-check"></i>
+                                    Admin Panel (Operasyon Merkezi)
+                                </div>
+                                <h3>Tüm Operasyonu Tek Ekrandan Yönetin</h3>
+                                <p>Turlarınızı oluşturun, yolcularınızı kaydedin, gelir-giderinizi takip edin. Her şey
+                                    elinizin altında, Excel'e ihtiyaç yok.</p>
+
+                                <ul class="dual-features">
+                                    <li>
+                                        <i data-lucide="pie-chart"></i>
+                                        <div>
+                                            <strong>Tur Bazlı Kâr/Zarar Analizi</strong>
+                                            <span>Hangi tur ne kadar kazandırdı, anında görün</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="file-text"></i>
+                                        <div>
+                                            <strong>Tek Tıkla PDF Çıktılar</strong>
+                                            <span>Otobüs oturma planı, oda listesi, fişler hazır</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="users"></i>
+                                        <div>
+                                            <strong>Personel, Kasa, Araç Yönetimi</strong>
+                                            <span>Herkes kendi işini görsün, yetki sınırları net</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="network"></i>
+                                        <div>
+                                            <strong>Komisyonlu Satış Ağı (Bayi)</strong>
+                                            <span>Başka acenteler sizin turunuzu satsın, takip edin</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dual-visual reveal-right">
+                                <div class="screenshot-frame large admin-frame">
+                                    <div class="frame-header">
+                                        <div class="frame-dots">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="frame-title">admin.turpro.com.tr</div>
+                                    </div>
+                                    <div class="frame-content">
+                                        <img src="ss2.png" alt="TurPro Admin Dashboard" class="screenshot-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Esnaf Dili) -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Fark Yaratan Özellikler</span>
+                <h2 class="section-title">Piyasada <span class="gradient-text">Olmayan Çözümler</span></h2>
+                <p class="section-description">Bu özellikler için eskiden Excel, kağıt-kalem ve saatler harcardınız.
+                    Artık tek tıkla halloluyor.</p>
+            </div>
+
+            <div class="features-timeline">
+                <!-- Feature 1 -->
+                <div class="feature-timeline-item reveal-up">
+                    <div class="feature-timeline-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <div class="feature-timeline-content">
+                        <h3>Çoklu Çıkış Noktası, Farklı Fiyatlar</h3>
+                        <p>Her yolcu aynı yerden binmez, aynı parayı ödemez. <strong>Ankara çıkışlı misafire
+                                5.000₺</strong>, <strong>Samsun çıkışlıya 4.500₺</strong> fiyat belirleyebilirsiniz.
+                            Duraklar, saatler, fiyatlar hepsi ayrı ayrı tanımlanır.</p>
+                        <div class="feature-tags">
+                            <span>Şehir Bazlı Fiyat</span>
+                            <span>Durak Yönetimi</span>
+                            <span>Kalkış Saatleri</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-timeline-item reveal-up">
+                    <div class="feature-timeline-icon">
+                        <i data-lucide="grid-3x3"></i>
+                    </div>
+                    <div class="feature-timeline-content">
+                        <h3>Sürükle-Bırak Oda Yönetimi</h3>
+                        <p>Kağıt kalemle otel oda listesi yapmayın. Yolcuları ekranda <strong>otel odalarına sürükleyip
+                                bırakın</strong>, listeyi tek tuşla otele PDF olarak atın. Twin, Double, Single, French
+                            Bed... Hepsi renk kodlu.</p>
+                        <div class="feature-tags">
+                            <span>Drag & Drop</span>
+                            <span>PDF Gönderimi</span>
+                            <span>Renk Kodlama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-timeline-item reveal-up">
+                    <div class="feature-timeline-icon">
+                        <i data-lucide="pen-tool"></i>
+                    </div>
+                    <div class="feature-timeline-content">
+                        <h3>Dijital Rıza Onayı</h3>
+                        <p>Otobüs kalkarken imza toplama derdine son. Yolcunuza <strong>SMS veya WhatsApp ile
+                                link</strong> gider, telefonundan TC kimlik numarası ile onaylar, arşivinize düşer.
+                            Yasal sorunlara
+                            karşı eliniz güçlü.</p>
+                        <div class="feature-tags">
+                            <span>SMS/Link Gönderimi</span>
+                            <span>Dijital İmza</span>
+                            <span>Otomatik Arşiv</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-timeline-item reveal-up">
+                    <div class="feature-timeline-icon">
+                        <i data-lucide="network"></i>
+                    </div>
+                    <div class="feature-timeline-content">
+                        <h3>Komisyonlu Satış Ağı (Bayi Sistemi)</h3>
+                        <p>Başka acentelere, influencer'lara veya yerel rehberlere <strong>panel açın</strong>. Sizin
+                            turlarınızı satsınlar. Kim ne kadar sattı, ne kadar komisyon hak etti, <strong>anında
+                                görün</strong>. Ödemeyi kontrollü yapın.</p>
+                        <div class="feature-tags">
+                            <span>Alt Bayi Paneli</span>
+                            <span>Komisyon Takibi</span>
+                            <span>Satış Raporu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-timeline-item reveal-up">
+                    <div class="feature-timeline-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <div class="feature-timeline-content">
+                        <h3>Profesyonel PDF Evraklar</h3>
+                        <p>Görsel <strong>otobüs oturma planı</strong>, oda grupları listesi, tahsilat fişleri, iade
+                            makbuzları... Hepsi firmanızın logosu ve bilgileriyle, tek tıkla hazır. Otele, kaptana,
+                            yolcuya hemen gönderin.</p>
+                        <div class="feature-tags">
+                            <span>Oturma Planı</span>
+                            <span>Oda Listesi</span>
+                            <span>Fiş/Makbuz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operation Screenshot -->
+            <div class="feature-showcase reveal-up">
+                <div class="screenshot-frame xlarge">
+                    <div class="frame-header">
+                        <div class="frame-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="frame-title">admin.turpro.com.tr/seferler</div>
+                    </div>
+                    <div class="frame-content">
+                        <img src="ss3.png" alt="TurPro Seferler Ekranı" class="screenshot-img">
+                    </div>
+                </div>
+                <p class="showcase-caption">Tüm turlarınızı tek ekrandan görün, yönetin, takip edin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Neden TurPro?</span>
+                <h2 class="section-title">Acentenize <span class="gradient-text">Gerçek Faydalar</span></h2>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card reveal-up">
+                    <div class="benefit-icon"><i data-lucide="trending-up"></i></div>
+                    <h3>Satışlarınız Artar</h3>
+                    <p>Müşterileriniz gece gündüz online rezervasyon yapar. Siz uyurken bile satış yaparsınız.</p>
+                </div>
+
+                <div class="benefit-card reveal-up delay-1">
+                    <div class="benefit-icon"><i data-lucide="clock"></i></div>
+                    <h3>Zamandan Tasarruf</h3>
+                    <p>Excel'de saatler geçirmek yok. Otomatik listeler, otomatik hesaplamalar, otomatik raporlar.</p>
+                </div>
+
+                <div class="benefit-card reveal-up delay-2">
+                    <div class="benefit-icon"><i data-lucide="shield"></i></div>
+                    <h3>Hatasız Operasyon</h3>
+                    <p>TC doğrulama, çakışma kontrolü, otomatik hesaplamalar. İnsan hatası minimumda.</p>
+                </div>
+
+                <div class="benefit-card reveal-up delay-3">
+                    <div class="benefit-icon"><i data-lucide="eye"></i></div>
+                    <h3>Her Şey Görünür</h3>
+                    <p>Hangi tur ne kazandırdı, kim ne kadar ödedi, kasa ne durumda? Tek bakışta görün.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical (Simplified) -->
+    <section class="technical-simple">
+        <div class="container">
+            <div class="tech-banner reveal-up">
+                <div class="tech-icon-group">
+                    <div class="tech-icon-item"><i data-lucide="cloud"></i></div>
+                    <div class="tech-icon-item"><i data-lucide="shield-check"></i></div>
+                    <div class="tech-icon-item"><i data-lucide="zap"></i></div>
+                </div>
+                <div class="tech-text">
+                    <h3>Güvenli ve Hızlı Altyapı</h3>
+                    <p>Modern teknolojilerle geliştirilmiş, yedekli ve güvenli altyapı. <strong>Verileriniz bulutta
+                            güvende</strong>, siteniz her zaman hızlı. Teknik detaylarla siz uğraşmayın, biz halledelim.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text reveal-left">
+                    <h2>Acentenizi Bir Üst Seviyeye Taşıyın</h2>
+                    <p>Formu doldurun, size özel bir sunum ayarlayalım. Sistemi canlı gösteririz, sorularınızı
+                        yanıtlarız, fiyat teklifimizi iletiriz.</p>
+
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <i data-lucide="check-circle"></i>
+                            <span>Ücretsiz canlı demo</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i data-lucide="check-circle"></i>
+                            <span>Bağlayıcı değil, bilgilendirme amaçlı</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i data-lucide="check-circle"></i>
+                            <span>30 dakikada sistemi tanıyın</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-form reveal-right">
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID"
+                        method="POST">
+                        <h3>Özel Sunum Talep Et</h3>
+
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required placeholder="Adınız Soyadınız">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Acente / Şirket Adı *</label>
+                            <input type="text" id="company" name="company" required placeholder="Şirket adınız">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız (Opsiyonel)</label>
+                            <textarea id="message" name="message" rows="3"
+                                placeholder="Sorularınız veya talepleriniz..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <i data-lucide="send"></i>
+                            Sunum Talep Et
+                        </button>
+
+                        <p class="form-note">
+                            <i data-lucide="lock"></i>
+                            Bilgileriniz gizli tutulur ve 3. kişilerle paylaşılmaz.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon"><i data-lucide="plane"></i></span>
+                        <span class="logo-text">TurPro</span>
+                    </a>
+                    <p>Turizm acenteleri için komple dijital çözüm. Müşteri vitrini + Operasyon merkezi tek pakette.</p>
+
+                </div>
+
+                <div class="footer-links">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#dual-power">Ne Sunuyoruz?</a></li>
+                        <li><a href="#features">Özellikler</a></li>
+                        <li><a href="#benefits">Faydalar</a></li>
+                        <li><a href="#contact">Sunum Talep Et</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li>
+                            <i data-lucide="mail"></i>
+                            <span>celal2004@gmail.com</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <span>+90 850 885 3455</span>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>İstanbul, Türkiye</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i data-lucide="x"></i>
+            </button>
+            <ul class="mobile-nav-links">
+                <li><a href="#dual-power">Ne Sunuyoruz?</a></li>
+                <li><a href="#features">Özellikler</a></li>
+                <li><a href="#benefits">Faydalar</a></li>
+                <li><a href="#contact" class="nav-cta">Sunum Talep Et</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Form Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <i data-lucide="check-circle"></i>
+            </div>
+            <h3>Teşekkürler!</h3>
+            <p>Talebiniz başarıyla alındı. En kısa sürede sizinle iletişime geçip sunum için randevu ayarlayacağız.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Tamam</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
