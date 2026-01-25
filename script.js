@@ -304,22 +304,68 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Pricing maintenance toggle
+// Pricing Mode Toggle - Standard vs 3-Year Campaign
 function initPricingToggle() {
-    const toggle = document.getElementById('maintenanceToggle');
-    const maintenanceElements = document.querySelectorAll('.pricing-maintenance');
+    const toggle = document.getElementById('pricingModeToggle');
+    const toggleOptions = document.querySelectorAll('.toggle-option');
+    const pricingCards = document.querySelectorAll('.pricing-card');
     
     if (!toggle) return;
     
+    // Set initial state (standard mode is default - unchecked)
+    toggle.checked = false;
+    
     toggle.addEventListener('change', () => {
-        maintenanceElements.forEach(el => {
-            if (toggle.checked) {
-                el.classList.add('visible');
+        const isCampaign = toggle.checked;
+        updatePricingMode(isCampaign);
+        
+        // Update toggle option active states
+        toggleOptions.forEach(opt => {
+            const mode = opt.dataset.mode;
+            if ((mode === 'campaign' && isCampaign) || (mode === 'standard' && !isCampaign)) {
+                opt.classList.add('active');
             } else {
-                el.classList.remove('visible');
+                opt.classList.remove('active');
             }
         });
     });
+    
+    // Click on toggle options
+    toggleOptions.forEach(opt => {
+        opt.addEventListener('click', () => {
+            const mode = opt.dataset.mode;
+            toggle.checked = mode === 'campaign';
+            toggle.dispatchEvent(new Event('change'));
+        });
+    });
+    
+    function updatePricingMode(isCampaign) {
+        pricingCards.forEach(card => {
+            const priceContainer = card.querySelector('.pricing-price');
+            const standardPrice = card.querySelector('.price-standard');
+            const campaignPrice = card.querySelector('.price-campaign');
+            
+            if (!standardPrice || !campaignPrice) return;
+            
+            // Add animation class
+            priceContainer.classList.add('animating');
+            
+            setTimeout(() => {
+                if (isCampaign) {
+                    standardPrice.style.display = 'none';
+                    campaignPrice.style.display = 'block';
+                } else {
+                    standardPrice.style.display = 'block';
+                    campaignPrice.style.display = 'none';
+                }
+                
+                priceContainer.classList.remove('animating');
+                
+                // Reinitialize icons
+                lucide.createIcons();
+            }, 200);
+        });
+    }
 }
 
 // Pricing card animations

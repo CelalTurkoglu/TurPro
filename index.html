@@ -408,25 +408,36 @@
                     Şeffaf Fiyatlandırma
                 </span>
                 <h2 class="section-title">Acentenize Uygun <span class="gradient-text">Paketi Seçin</span></h2>
-                <p class="section-description">Tek seferlik ödeme, aylık abonelik yok. İhtiyacınıza göre başlayın, büyüdükçe yükseltin.</p>
+                <p class="section-description">İhtiyacınıza göre ödeme planı seçin. Lansman fırsatıyla 3 yıl boyunca ek ödeme yok!</p>
             </div>
 
-            <!-- Maintenance Toggle -->
-            <div class="pricing-toggle-wrapper reveal-up">
-                <label class="pricing-toggle">
-                    <input type="checkbox" id="maintenanceToggle">
-                    <span class="toggle-slider"></span>
-                    <span class="toggle-label">Yıllık Bakım Ücretlerini Göster</span>
-                    <span class="toggle-info" data-tooltip="Bakım ücreti; sunucu, SSL sertifikası, güvenlik güncellemeleri ve teknik desteği kapsar.">
-                        <i data-lucide="info"></i>
+            <!-- New Pricing Toggle -->
+            <div class="pricing-mode-toggle reveal-up">
+                <div class="toggle-container">
+                    <span class="toggle-option active" data-mode="standard">
+                        <i data-lucide="credit-card"></i>
+                        Standart (İlk Yıl)
                     </span>
-                </label>
+                    <label class="mode-switch">
+                        <input type="checkbox" id="pricingModeToggle">
+                        <span class="mode-slider"></span>
+                    </label>
+                    <span class="toggle-option" data-mode="campaign">
+                        <i data-lucide="flame"></i>
+                        3 Yıllık Kampanya
+                        <span class="campaign-badge">Tasarruf!</span>
+                    </span>
+                </div>
+                <p class="toggle-hint" id="toggleHint">
+                    <i data-lucide="info"></i>
+                    <span>Standart modda kurulum + ilk yıl yenileme ücreti gösterilir. Sonraki yıllar sadece yenileme ücreti ödenir.</span>
+                </p>
             </div>
 
             <!-- Pricing Cards -->
             <div class="pricing-cards">
                 <!-- Entry Package -->
-                <div class="pricing-card entry reveal-up" data-delay="0">
+                <div class="pricing-card entry reveal-up" data-delay="0" data-tier="entry">
                     <div class="pricing-card-header">
                         <span class="pricing-tier">Başlangıç</span>
                         <h3 class="pricing-name">Giriş Paketi</h3>
@@ -435,12 +446,30 @@
 
                     <div class="pricing-card-body">
                         <div class="pricing-price">
-                            <span class="price-amount">49.900 ₺</span>
-                            <span class="price-suffix">+ KDV</span>
-                        </div>
-                        <div class="pricing-maintenance" data-visible="false">
-                            <i data-lucide="calendar"></i>
-                            <span>~90-100€ / Yıl Bakım</span>
+                            <div class="price-standard">
+                                <span class="price-amount" data-price="standard-setup">40.000 ₺ <small class="kdv-tag">+KDV</small></span>
+                                <span class="price-suffix">Kurulum</span>
+                                <div class="price-renewal">
+                                    <i data-lucide="plus"></i>
+                                    <span data-price="standard-renewal">15.000 ₺/Yıl Yenileme</span>
+                                </div>
+                                <div class="price-special-offer">
+                                    <i data-lucide="gift"></i>
+                                    <span>2+1 Yıl Özel Fiyatı: <strong>55.000 ₺</strong> +KDV</span>
+                                </div>
+                            </div>
+                            <div class="price-campaign" style="display: none;">
+                                <span class="price-amount campaign-price" data-price="campaign">55.000 ₺ <small class="kdv-tag">+KDV</small></span>
+                                <span class="price-suffix">Tek Seferlik</span>
+                                <div class="price-duration">
+                                    <i data-lucide="calendar-check"></i>
+                                    <span>3 Yıl Kullanım Hakkı</span>
+                                </div>
+                                <div class="campaign-savings">
+                                    <i data-lucide="piggy-bank"></i>
+                                    <span>30.000 ₺ Tasarruf (2 yıllık yenileme bedava)</span>
+                                </div>
+                            </div>
                         </div>
 
                         <ul class="pricing-features">
@@ -474,8 +503,8 @@
                         <div class="pricing-warning">
                             <i data-lucide="alert-triangle"></i>
                             <div>
-                                <strong>Geliştirilemez Altyapı</strong>
-                                <p>HTML/CSS tabanlı eski teknoloji. Silver/Gold'a yükseltme yapılamaz, veri aktarımı desteklenmez.</p>
+                                <strong>Sonradan Yükseltilemez</strong>
+                                <p>HTML/CSS tabanlı eski teknoloji. Silver/Gold'a geçiş yapılamaz.</p>
                             </div>
                         </div>
                     </div>
@@ -489,7 +518,7 @@
                 </div>
 
                 <!-- Silver Package - Recommended -->
-                <div class="pricing-card silver featured reveal-up" data-delay="1">
+                <div class="pricing-card silver featured reveal-up" data-delay="1" data-tier="silver">
                     <div class="pricing-badge-popular">
                         <i data-lucide="star"></i>
                         En Çok Tercih Edilen
@@ -503,12 +532,26 @@
 
                     <div class="pricing-card-body">
                         <div class="pricing-price">
-                            <span class="price-amount">99.900 ₺</span>
-                            <span class="price-suffix">+ KDV</span>
-                        </div>
-                        <div class="pricing-maintenance" data-visible="false">
-                            <i data-lucide="calendar"></i>
-                            <span>~150€ / Yıl Bakım</span>
+                            <div class="price-standard">
+                                <span class="price-amount" data-price="standard-setup">89.000 ₺ <small class="kdv-tag">+KDV</small></span>
+                                <span class="price-suffix">Kurulum</span>
+                                <div class="price-renewal">
+                                    <i data-lucide="refresh-cw"></i>
+                                    <span data-price="standard-renewal">+25.000 ₺/Yıl Yenileme</span>
+                                </div>
+                                <div class="price-special-offer">
+                                    <i data-lucide="gift"></i>
+                                    <span>2+1 Yıl Özel Fiyatı: <strong>114.000 ₺</strong> +KDV</span>
+                                </div>
+                            </div>
+                            <div class="price-campaign" style="display: none;">
+                                <span class="price-amount campaign-price" data-price="campaign">114.000 ₺ <small class="kdv-tag">+KDV</small></span>
+                                <span class="price-suffix">Tek Seferlik</span>
+                                <div class="price-duration">
+                                    <i data-lucide="calendar-check"></i>
+                                    <span>3 Yıl Kullanım Hakkı</span>
+                                </div>
+                            </div>
                         </div>
 
                         <ul class="pricing-features">
@@ -543,7 +586,7 @@
                             <i data-lucide="arrow-up-circle"></i>
                             <div>
                                 <strong>Yükseltilebilir Altyapı</strong>
-                                <p>Dilediğiniz zaman fark ödeyerek Gold'a geçiş yapabilirsiniz. Verileriniz korunur.</p>
+                                <p>Dilediğiniz zaman fark ödeyerek Gold'a geçiş yapabilirsiniz.</p>
                             </div>
                         </div>
                     </div>
@@ -557,26 +600,44 @@
                 </div>
 
                 <!-- Gold Package -->
-                <div class="pricing-card gold spotlight reveal-up" data-delay="2">
+                <div class="pricing-card gold spotlight reveal-up" data-delay="2" data-tier="gold">
                     <div class="pricing-badge-premium">
                         <i data-lucide="crown"></i>
-                        Tam Paket
+                        En İyi Değer
                     </div>
 
                     <div class="pricing-card-header">
                         <span class="pricing-tier">Kurumsal</span>
                         <h3 class="pricing-name">Gold Paket</h3>
-                        <p class="pricing-tagline">Online satış yapmak isteyen lider acenteler için</p>
+                        <p class="pricing-tagline campaign-tagline">3 Yıl Boyunca Kafanız Rahat</p>
                     </div>
 
                     <div class="pricing-card-body">
                         <div class="pricing-price">
-                            <span class="price-amount">149.900 ₺</span>
-                            <span class="price-suffix">+ KDV</span>
-                        </div>
-                        <div class="pricing-maintenance" data-visible="false">
-                            <i data-lucide="calendar"></i>
-                            <span>~250€ / Yıl Bakım</span>
+                            <div class="price-standard">
+                                <span class="price-amount" data-price="standard-setup">135.000 ₺ <small class="kdv-tag">+KDV</small></span>
+                                <span class="price-suffix">Kurulum</span>
+                                <div class="price-renewal">
+                                    <i data-lucide="refresh-cw"></i>
+                                    <span data-price="standard-renewal">+45.000 ₺/Yıl Yenileme</span>
+                                </div>
+                                <div class="price-special-offer">
+                                    <i data-lucide="gift"></i>
+                                    <span>2+1 Yıl Özel Fiyatı: <strong>180.000 ₺</strong> +KDV</span>
+                                </div>
+                            </div>
+                            <div class="price-campaign" style="display: none;">
+                                <span class="price-amount campaign-price" data-price="campaign">180.000 ₺ <small class="kdv-tag">+KDV</small></span>
+                                <span class="price-suffix">Tek Seferlik</span>
+                                <div class="price-duration">
+                                    <i data-lucide="calendar-check"></i>
+                                    <span>3 Yıl Kullanım Hakkı</span>
+                                </div>
+                                <div class="savings-badge">
+                                    <i data-lucide="piggy-bank"></i>
+                                    <span>90.000 ₺ Tasarruf!</span>
+                                </div>
+                            </div>
                         </div>
 
                         <ul class="pricing-features">
@@ -604,7 +665,6 @@
                                 <i data-lucide="check"></i>
                                 <span>SEO & Mobil Uyumluluk</span>
                             </li>
-                           
                         </ul>
 
                         <!-- Premium Notice -->
@@ -816,21 +876,21 @@
                             <tr class="category-row">
                                 <td colspan="4">
                                     <i data-lucide="headphones"></i>
-                                    Destek & Bakım
+                                    Destek & Yenileme
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <span class="feature-with-tooltip">
-                                        Yıllık Bakım Ücreti
-                                        <span class="tooltip-trigger" data-tooltip="Sunucu, SSL, güvenlik güncellemeleri ve temel teknik destek dahildir.">
+                                        Yıllık Yenileme Ücreti
+                                        <span class="tooltip-trigger" data-tooltip="Lisans yenileme, sunucu barındırma, SSL sertifikası, güvenlik güncellemeleri ve teknik destek dahildir. İlk yıldan sonra her yıl ödenir.">
                                             <i data-lucide="help-circle"></i>
                                         </span>
                                     </span>
                                 </td>
-                                <td>~90-100€</td>
-                                <td>~150€</td>
-                                <td>~250€</td>
+                                <td>15.000 ₺</td>
+                                <td>25.000 ₺</td>
+                                <td>45.000 ₺</td>
                             </tr>
                            
                             
@@ -840,7 +900,7 @@
 
                 <p class="comparison-note">
                     <i data-lucide="info"></i>
-                    Tüm fiyatlar tek seferlik kurulum ücretidir. Aylık abonelik yoktur.
+                    Kurulum ücretleri tek seferliktir. Yenileme ücreti ilk yıldan sonra yıllık olarak ödenir. 3 yıllık kampanyada yenileme ücreti dahildir.
                 </p>
             </div>
 

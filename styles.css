@@ -1503,7 +1503,241 @@ textarea {
     pointer-events: none;
 }
 
-/* Maintenance Toggle */
+/* ===== NEW PRICING MODE TOGGLE ===== */
+.pricing-mode-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 16px;
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    box-shadow: var(--shadow-sm);
+}
+
+.toggle-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-option svg {
+    width: 16px;
+    height: 16px;
+}
+
+.toggle-option.active {
+    color: var(--text-primary);
+    background: var(--primary-50);
+}
+
+.toggle-option[data-mode="campaign"].active {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(239, 68, 68, 0.1) 100%);
+    color: #ea580c;
+}
+
+.campaign-badge {
+    display: inline-flex;
+    padding: 2px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+    color: white;
+    border-radius: 100px;
+    animation: pulse-badge 2s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.mode-switch {
+    position: relative;
+    width: 56px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.mode-switch input {
+    display: none;
+}
+
+.mode-slider {
+    position: absolute;
+    inset: 0;
+    background: var(--bg-muted);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.mode-slider::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.mode-switch input:checked + .mode-slider {
+    background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+}
+
+.mode-switch input:checked + .mode-slider::after {
+    left: calc(100% - 27px);
+}
+
+.toggle-hint {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-muted);
+    max-width: 500px;
+    text-align: center;
+}
+
+.toggle-hint svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+/* Price Display Modes */
+.price-standard,
+.price-campaign {
+    transition: all 0.4s ease;
+}
+
+.price-standard {
+    text-align: center;
+}
+
+.price-campaign {
+    text-align: center;
+}
+
+.price-renewal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.price-renewal svg {
+    width: 14px;
+    height: 14px;
+}
+
+.price-special-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+    border: 1px dashed rgba(99, 102, 241, 0.3);
+    border-radius: 12px;
+    font-size: 13px;
+    color: var(--primary);
+}
+
+.price-special-offer svg {
+    width: 16px;
+    height: 16px;
+    color: var(--primary);
+}
+
+.price-special-offer strong {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.price-duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--success);
+    font-weight: 500;
+}
+
+.price-duration svg {
+    width: 14px;
+    height: 14px;
+}
+
+.savings-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+    color: var(--success);
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 100px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.savings-badge svg {
+    width: 14px;
+    height: 14px;
+}
+
+.campaign-price {
+    background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.campaign-tagline {
+    color: var(--success) !important;
+    font-weight: 500;
+}
+
+/* Price animation */
+.pricing-price.animating .price-amount {
+    animation: priceChange 0.4s ease;
+}
+
+@keyframes priceChange {
+    0% { opacity: 1; transform: translateY(0); }
+    50% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Legacy Toggle - Keep for backwards compatibility */
 .pricing-toggle-wrapper {
     display: flex;
     justify-content: center;
@@ -1794,6 +2028,16 @@ textarea {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.kdv-tag {
+    font-size: 14px;
+    font-weight: 500;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: var(--text-muted);
+    background-clip: unset;
+    opacity: 0.7;
 }
 
 .price-suffix {
@@ -2293,6 +2537,38 @@ textarea {
 }
 
 @media (max-width: 768px) {
+    /* New pricing mode toggle responsive */
+    .pricing-mode-toggle {
+        padding: 0 16px;
+    }
+    
+    .toggle-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+    
+    .toggle-option {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    
+    .campaign-badge {
+        font-size: 9px;
+        padding: 2px 6px;
+    }
+    
+    .mode-switch {
+        order: -1;
+    }
+    
+    .toggle-hint {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+    
+    /* Legacy toggle responsive */
     .pricing-toggle {
         flex-wrap: wrap;
         justify-content: center;
