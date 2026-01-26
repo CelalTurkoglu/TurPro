@@ -1,0 +1,11 @@
+# TurPilot - robots.txt
+# https://turpilot.site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://turpilot.site/sitemap.xml
+
+# Crawl-delay (optional, be nice to server)
+Crawl-delay: 1
