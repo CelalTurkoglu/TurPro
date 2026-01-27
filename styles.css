@@ -1122,6 +1122,23 @@ textarea {
     color: rgba(255, 255, 255, 0.4);
 }
 
+.footer-seo-text {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.2);
+    margin-top: 8px;
+}
+
+/* SEO Keyword styling */
+.seo-keyword {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 /* ===== Mobile Menu ===== */
 .mobile-menu-overlay {
     position: fixed;

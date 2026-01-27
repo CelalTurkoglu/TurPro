@@ -1,0 +1,427 @@
+================================================================================
+                         TURPILOT MARKA KİMLİĞİ REHBERİ
+                    Instagram & Sosyal Medya İçerik Üretimi İçin
+================================================================================
+
+Bu dosya, TurPilot markasının tüm görsel ve içerik kimliğini kapsamlı şekilde
+açıklamaktadır. Görsel üretirken, post hazırlarken bu bilgileri referans alın.
+
+================================================================================
+                              1. MARKA TANIMI
+================================================================================
+
+MARKA ADI: TurPilot
+SLOGAN: "Acentenizin Hem Vitrini Hem Beyni"
+WEB SİTESİ: https://turpilot.site
+SEKTÖR: B2B SaaS (Turizm Teknolojisi)
+
+TurPilot Nedir?
+---------------
+TurPilot, Türkiye'deki tur acenteleri için geliştirilmiş bir yazılım çözümüdür.
+İki ana bileşenden oluşur:
+
+1. PUBLIC SİTE (Müşteri Vitrini)
+   - Acentenin müşterilerine açık web sitesi
+   - Online tur listeleme ve rezervasyon
+   - Mobil uyumlu, SEO dostu tasarım
+   - Kullanıcı kayıt ve giriş sistemi
+   - 7/24 otomatik satış yapabilme
+
+2. ADMIN PANELİ (Operasyon Merkezi)
+   - Tur oluşturma ve yönetimi
+   - Yolcu kaydı ve takibi
+   - Finansal raporlar (kâr/zarar analizi)
+   - PDF çıktılar (oturma planı, oda listesi, fişler)
+   - Personel ve yetki yönetimi
+   - Bayi/komisyonlu satış sistemi
+
+================================================================================
+                           2. RENK PALETİ
+================================================================================
+
+Ana Renkler (Primary)
+---------------------
+Bu renkler logoda, butonlarda ve vurgu alanlarında kullanılır.
+
+PRIMARY (Ana Mor/İndigo):
+  - HEX: #6366f1
+  - RGB: 99, 102, 241
+  - Kullanım: Logo, CTA butonları, başlıklar, ikonlar
+  - Ton Varyasyonları:
+    • Light: #818cf8
+    • Dark: #4f46e5
+    • 50 (çok açık): #eef2ff
+    • 100 (açık): #e0e7ff
+
+SECONDARY (Zümrüt Yeşili):
+  - HEX: #10b981
+  - RGB: 16, 185, 129
+  - Kullanım: Başarı durumları, onay, pozitif metrikler, "tasarruf" vurguları
+  - Ton Varyasyonları:
+    • Light: #34d399
+    • Dark: #059669
+
+ACCENT (Pembe/Rose):
+  - HEX: #f43f5e
+  - RGB: 244, 63, 94
+  - Kullanım: Dikkat çekici unsurlar, kampanya badge'leri, sıcak vurgular
+  - Ton Varyasyonları:
+    • Light: #fb7185
+
+Arka Plan Renkleri
+------------------
+LIGHT TEMA (web sitesi için kullanılan):
+  - Beyaz: #ffffff
+  - Açık Gri: #f8fafc
+  - Soft Gri: #f1f5f9
+  - Muted Gri: #e2e8f0
+
+DARK TEMA (karanlık bölümler için):
+  - Koyu Lacivert: #0f172a
+  - Daha Koyu: #020617
+
+Metin Renkleri
+--------------
+  - Birincil (başlıklar): #0f172a (çok koyu lacivert)
+  - İkincil (paragraflar): #334155 (koyu gri)
+  - Muted (açıklamalar): #64748b (orta gri)
+  - Açık: #94a3b8 (açık gri)
+
+Durum Renkleri
+--------------
+  - Başarı/Success: #10b981 (yeşil)
+  - Uyarı/Warning: #f59e0b (turuncu)
+  - Tehlike/Danger: #ef4444 (kırmızı)
+
+Gradient'ler (Geçişler)
+-----------------------
+  - GRADIENT-1 (Ana): #6366f1 → #a855f7 → #ec4899 (mor-pembe geçiş)
+  - GRADIENT-2 (İkincil): #10b981 → #14b8a6 (yeşil-turkuaz)
+
+================================================================================
+                           3. TİPOGRAFİ
+================================================================================
+
+Font Ailesi: Inter
+Google Fonts: https://fonts.google.com/specimen/Inter
+
+Font Ağırlıkları:
+  - 300 (Light): Açıklama metinleri
+  - 400 (Regular): Paragraf metinleri
+  - 500 (Medium): Alt başlıklar, etiketler
+  - 600 (SemiBold): Buton metinleri, vurgular
+  - 700 (Bold): Başlıklar
+  - 800 (ExtraBold): Ana başlıklar, fiyatlar
+  - 900 (Black): Hero başlıkları
+
+Yazı Stilleri:
+  - Başlıklar: Büyük, kalın, koyu renk
+  - Paragraflar: Normal ağırlık, orta gri
+  - Etiketler/Badge'ler: Küçük, yarı kalın, büyük harf
+
+================================================================================
+                           4. LOGO & İKONLAR
+================================================================================
+
+Logo Yapısı:
+------------
+TurPilot logosu iki bileşenden oluşur:
+
+1. İKON: Uçak simgesi (Lucide Icons - "plane" ikonu)
+   - Daire içinde mor arka plan (#6366f1)
+   - Beyaz uçak ikonu
+   - Uçak 45 derece açıyla yukarı doğru
+
+2. YAZI: "TurPilot" yazısı
+   - Font: Inter
+   - Ağırlık: 800 (ExtraBold)
+   - "Tur" kısmı: Koyu metin rengi
+   - "Pilot" kısmı: Primary mor renk (#6366f1) veya gradient
+
+İkon Kütüphanesi:
+-----------------
+TurPilot, Lucide Icons kullanır (https://lucide.dev)
+Sıkça kullanılan ikonlar:
+  - plane (uçak - logo)
+  - globe (dünya - public site)
+  - settings (dişli - admin panel)
+  - users (kullanıcılar)
+  - calendar-check (takvim - rezervasyon)
+  - pie-chart (pasta grafik - raporlar)
+  - file-text (belge - PDF)
+  - shield-check (kalkan - güvenlik)
+  - check (onay işareti - özellik listesi)
+  - star (yıldız - öne çıkan)
+  - crown (taç - premium)
+  - gift (hediye - kampanya)
+  - piggy-bank (kumbara - tasarruf)
+  - refresh-cw (döngü - yenileme)
+
+================================================================================
+                        5. GÖRSEL TASARIM İLKELERİ
+================================================================================
+
+Genel Tasarım Dili:
+-------------------
+  - Modern ve minimal
+  - Bol boşluk (whitespace)
+  - Yumuşak köşeler (border-radius: 12-24px)
+  - Hafif gölgeler (subtle shadows)
+  - Cam efekti (glassmorphism) bazı alanlarda
+  - Gradient vurgular
+
+Kart Tasarımları:
+-----------------
+  - Beyaz arka plan
+  - Hafif gölge
+  - 16-24px border-radius
+  - Hover'da hafif yukarı kayma ve gölge artışı
+
+Buton Stilleri:
+---------------
+PRIMARY BUTON:
+  - Arka plan: Primary gradient veya solid #6366f1
+  - Metin: Beyaz
+  - Köşe yuvarlaklığı: 12px
+  - Hover: Hafif parlaklık artışı
+
+SECONDARY BUTON:
+  - Arka plan: Şeffaf veya açık gri
+  - Border: 1px solid gri
+  - Metin: Koyu gri veya primary renk
+  - Hover: Hafif arka plan dolumu
+
+Görsel Çerçeveler:
+------------------
+Ekran görüntüleri browser mockup içinde gösterilir:
+  - Üstte 3 nokta (kırmızı, sarı, yeşil)
+  - URL çubuğu
+  - İçerikte screenshot
+  - Hafif gölge ve border-radius
+
+================================================================================
+                      6. MİSYON & VİZYON
+================================================================================
+
+MİSYON:
+-------
+Türkiye'deki tur acentelerini dijitalleştirmek. Excel tablolarından, kağıt 
+kalemden kurtarıp modern, entegre bir yazılım çözümüyle buluşturmak. 
+Hem müşteriye açık profesyonel web sitesi hem de güçlü yönetim paneli 
+sunarak acentelerin rekabet gücünü artırmak.
+
+VİZYON:
+-------
+Türkiye'nin en çok tercih edilen tur acentesi yazılımı olmak. Her ölçekteki
+acentenin dijital dönüşümüne öncülük etmek. Turizm sektöründe teknoloji 
+standardını yükseltmek.
+
+================================================================================
+                    7. HEDEF KİTLE & PERSONA
+================================================================================
+
+Birincil Hedef Kitle:
+---------------------
+  - Türkiye'deki tur acenteleri
+  - Küçük ve orta ölçekli işletmeler
+  - 1-20 personelli operasyonlar
+  - Yurt içi - yurt dışı tur düzenleyen firmalar
+
+Persona Özellikleri:
+--------------------
+  - Yaş: 35-55
+  - Pozisyon: Acente sahibi, genel müdür, operasyon müdürü
+  - Teknoloji seviyesi: Orta (Excel kullanabilen ama yazılımcı olmayan)
+  - Sorunları:
+    • Excel'de kaybolmuş veriler
+    • Telefonla gelen rezervasyonları takip edememe
+    • Kâr/zarar hesabı yapamama
+    • Profesyonel web sitesi yokluğu
+    • Evrak işlerinde zaman kaybı
+
+================================================================================
+                       8. SES TONU & DİL
+================================================================================
+
+İletişim Dili:
+--------------
+  - Samimi ama profesyonel
+  - "Esnaf dili" - sade, anlaşılır
+  - Teknik jargondan kaçınma
+  - Fayda odaklı anlatım
+  - Empati kuran yaklaşım
+
+Örnek Cümleler:
+---------------
+  ✓ "Gece 3'te bile müşteriniz tur satın alabilir"
+  ✓ "Excel'e ihtiyaç yok, her şey elinizin altında"
+  ✓ "Kağıt kalemle oda listesi yapmayın"
+  ✓ "Hangi tur ne kadar kazandırdı, anında görün"
+  ✓ "Tek tıkla PDF çıktı alın"
+
+Kaçınılması Gereken:
+--------------------
+  ✗ Aşırı teknik terimler
+  ✗ İngilizce ağırlıklı ifadeler
+  ✗ Soğuk, kurumsal ton
+  ✗ Abartılı vaatler
+
+================================================================================
+                      9. ÖNE ÇIKAN ÖZELLİKLER
+================================================================================
+
+Instagram içeriklerinde vurgulanabilecek özellikler:
+
+1. İKİ SİSTEM TEK PAKET
+   - Public site + Admin panel birlikte
+   - Rakiplerin sunmadığı çözüm
+
+2. ONLINE REZERVASYON
+   - 7/24 satış
+   - Müşteri kendi biletini alır
+
+3. ÇOKLU ÇIKIŞ NOKTASI
+   - Farklı şehirlerden farklı fiyatlar
+   - Esnek tur yapılandırması
+
+4. ODA-OTEL YÖNETİMİ
+   - Sürükle bırak yerleştirme
+   - Otele hazır PDF liste
+
+5. DİJİTAL RIZA ONAYI
+   - SMS/WhatsApp ile link
+   - TC ile dijital imza
+   - Yasal güvence
+
+6. BAYİ SİSTEMİ
+   - Komisyonlu satış ağı
+   - Alt bayi paneli
+   - Satış takibi
+
+7. PDF EVRAKLAR
+   - Oturma planı
+   - Oda listesi
+   - Fiş/makbuz
+
+8. RAPORLAMA
+   - Tur bazlı kâr/zarar
+   - Anlık finansal durum
+
+================================================================================
+                      10. FİYATLANDIRMA BİLGİSİ
+================================================================================
+
+3 Paket Seçeneği:
+
+ENTRY PAKET (Giriş):
+  - Kurulum: 40.000 ₺ +KDV
+  - Yıllık Yenileme: 15.000 ₺
+  - 2+1 Yıl Özel: 55.000 ₺ +KDV
+  - Hedef: Yeni başlayanlar
+  - Not: Eski teknoloji, yükseltilemez
+
+SILVER PAKET (Profesyonel):
+  - Kurulum: 89.000 ₺ +KDV
+  - Yıllık Yenileme: 25.000 ₺
+  - 2+1 Yıl Özel: 114.000 ₺ +KDV
+  - Hedef: Büyüme odaklı acenteler
+  - Badge: "En Çok Tercih Edilen"
+
+GOLD PAKET (Kurumsal):
+  - Kurulum: 135.000 ₺ +KDV
+  - Yıllık Yenileme: 45.000 ₺
+  - 2+1 Yıl Özel: 180.000 ₺ +KDV
+  - Hedef: Büyük acenteler
+  - Ekstra: B2C web sitesi, bayi sistemi
+  - Badge: "En İyi Değer"
+
+================================================================================
+                 11. INSTAGRAM İÇERİK FİKİRLERİ
+================================================================================
+
+Post Kategorileri:
+------------------
+
+1. ÜRÜN TANITIM
+   - Özellik spotlights
+   - Ekran görüntüleri
+   - Before/After karşılaştırması
+
+2. EĞİTİM / İPUÇLARI
+   - "Biliyor muydunuz?" serisi
+   - Acente yönetimi ipuçları
+   - Dijitalleşme tavsiyeleri
+
+3. MÜŞTERİ HİKAYELERİ
+   - Başarı hikayeleri
+   - Testimonial'lar
+
+4. SEKTÖR İÇERİKLERİ
+   - Turizm trendleri
+   - Sezon duyuruları
+
+5. MARKA / KÜLTÜR
+   - Ekip tanıtımı
+   - Değerler
+
+Görsel Formatlar:
+-----------------
+  - Kare (1:1) - Feed postları
+  - Dikey (4:5) - Carousel'lar
+  - 9:16 - Reels/Stories
+  - 16:9 - Video thumbnails
+
+Hashtag Önerileri:
+------------------
+#TurPilot #TurYazılımı #AcenteYazılımı #TurizmTeknolojisi
+#DijitalAcente #OnlineRezervasyon #TurOperatörü #TurizmSektörü
+#AcenteYönetimi #TurizmdeDijitalleşme #TürkiyeTurizm
+
+================================================================================
+                        12. YASAKLAR & DİKKAT
+================================================================================
+
+YAPILMAMASI GEREKENLER:
+-----------------------
+  ✗ Logonun renklerini değiştirme
+  ✗ Gradient yerine düz renkler (tersi de geçerli değil)
+  ✗ Inter dışında font kullanma
+  ✗ Çok karışık, kalabalık tasarımlar
+  ✗ Düşük çözünürlüklü görseller
+  ✗ Rakip marka isimleri kullanma
+  ✗ Gerçekçi olmayan vaatler
+
+TUTARLILIK:
+-----------
+  - Her zaman aynı renk paletini kullan
+  - Logo her zaman aynı formatta olsun
+  - Ses tonu tutarlı kalsın
+  - Görsel dil tutarlı olsun
+
+================================================================================
+                            ÖZET REFERANS KARTI
+================================================================================
+
+RENKLER:
+  Primary:   #6366f1 (Mor/İndigo)
+  Secondary: #10b981 (Yeşil)
+  Accent:    #f43f5e (Pembe)
+  Dark BG:   #0f172a (Lacivert)
+  Light BG:  #f8fafc (Açık Gri)
+
+FONT: Inter (Google Fonts)
+
+LOGO: Uçak ikonu + "TurPilot" yazısı
+
+SLOGAN: "Acentenizin Hem Vitrini Hem Beyni"
+
+ANAHTAR KELİMELER:
+  - Tur yönetim yazılımı
+  - Online rezervasyon
+  - Acente yazılımı
+  - Dijital acente
+  - Public site + Admin panel
+
+================================================================================
+                              DOSYA SONU
+================================================================================

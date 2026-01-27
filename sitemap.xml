@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://turpilot.site/</loc>
-        <lastmod>2026-01-26</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://turpilot.site/og-image.png</image:loc>
+            <image:title>TurPilot - Tur Acente Yazılımı</image:title>
+            <image:caption>Türkiye'nin en kapsamlı tur acente yazılımı</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://turpilot.site/ss1.png</image:loc>
+            <image:title>TurPilot Online Rezervasyon Sistemi</image:title>
+            <image:caption>Müşterileriniz için modern tur listeleme ve rezervasyon sayfası</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://turpilot.site/ss2.png</image:loc>
+            <image:title>TurPilot Admin Paneli</image:title>
+            <image:caption>Güçlü yönetim paneli ile tüm operasyonu kontrol edin</image:caption>
+        </image:image>
+    </url>
+    <!-- Anchor sections as virtual pages for better indexing -->
+    <url>
+        <loc>https://turpilot.site/#features</loc>
+        <lastmod>2026-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://turpilot.site/#pricing</loc>
+        <lastmod>2026-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://turpilot.site/#contact</loc>
+        <lastmod>2026-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>

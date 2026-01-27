@@ -1,4 +1,4 @@
-# TurPilot - robots.txt
+# TurPilot - Tur Acente Yazılımı
 # https://turpilot.site
 
 User-agent: *
@@ -7,5 +7,20 @@ Allow: /
 # Sitemap location
 Sitemap: https://turpilot.site/sitemap.xml
 
-# Crawl-delay (optional, be nice to server)
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yandex (popular in Turkey)
+User-agent: Yandex
+Allow: /
 Crawl-delay: 1
