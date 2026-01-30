@@ -277,6 +277,12 @@ textarea {
     color: var(--text-primary);
 }
 
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
 .logo-icon {
     display: flex;
     align-items: center;
@@ -1109,6 +1115,22 @@ textarea {
     width: 16px;
     height: 16px;
     color: var(--primary-light);
+}
+
+.footer-contact .social-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: var(--transition);
+}
+
+.footer-contact .social-link:hover {
+    color: #E4405F;
+}
+
+.footer-contact .social-link:hover svg {
+    color: #E4405F;
 }
 
 .footer-bottom {
